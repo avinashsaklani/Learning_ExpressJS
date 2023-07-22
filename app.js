@@ -8,9 +8,17 @@ let Password = 1234567
 // app.get(route, callback(req, res))
 
 app.get('/', (req, res) => {
-    res.write('<h1> This is the Login Page </h1>')
-    res.write('<h1> Welcome! </h1>')
-    res.send()
+    // res.write('<h1> This is the Login Page </h1>')
+    // res.write('<h1> Welcome! </h1>')
+    res.send([{
+        firstName: 'Avinash',
+        lastName: 'Saklani'
+    },
+    {
+        firstName: 'Elon',
+        lastName: 'Musk'
+    }
+    ])
 }) // login page
 
 app.use(loginMiddleWare)
