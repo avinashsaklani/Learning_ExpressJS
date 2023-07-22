@@ -8,7 +8,9 @@ let Password = 1234567
 // app.get(route, callback(req, res))
 
 app.get('/', (req, res) => {
-    res.send('This is the Login Page')
+    res.write('<h1> This is the Login Page </h1>')
+    res.write('<h1> Welcome! </h1>')
+    res.send()
 }) // login page
 
 app.use(loginMiddleWare)
@@ -34,3 +36,6 @@ function loginMiddleWare(req, res, next) {
         res.send('Cannot authenticate the user')
     }
 }
+
+
+
