@@ -10,7 +10,7 @@ let Password = 1234567
 app.get('/', (req, res) => {
     // res.write('<h1> This is the Login Page </h1>')
     // res.write('<h1> Welcome! </h1>')
-    res.send([{
+    res.json([{
         firstName: 'Avinash',
         lastName: 'Saklani'
     },
